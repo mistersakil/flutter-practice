@@ -53,10 +53,26 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Flutter App'),
+          title: const Text('Flutter AppBar'),
         ),
-        body: Center(child: Container(color: Colors.grey, width:150, height:100, child: Image.asset('assets/images/ihelp-logo.png')))
+        body: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            const Text('A', style: TextStyle(fontSize: 25)),
+            const Text('B', style: TextStyle(fontSize: 25)),
+            const Text('C', style: TextStyle(fontSize: 25)),
+            const Text('D', style: TextStyle(fontSize: 25)),
+            ElevatedButton(onPressed: (){}, child: const Text("Join"))
+          ],
+        )
     );
+
+    // return Scaffold(
+    //     appBar: AppBar(
+    //       title: const Text('Flutter App'),
+    //     ),
+    //     body: Center(child: Container(color: Colors.grey, width:150, height:100, child: Image.asset('assets/images/ihelp-logo.png')))
+    // );
     // return Scaffold(
     //   appBar: AppBar(
     //     title: const Text('Flutter App'),
