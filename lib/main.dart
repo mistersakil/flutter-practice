@@ -52,12 +52,18 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Flutter App'),
-      ),
-      body: Center(
-        child: Container(width: 200, height: 100, color: Colors.brown, child: const Center(child: Text('center div container', style: TextStyle(color: Colors.white, fontSize: 20),)))
-      )
+        appBar: AppBar(
+          title: const Text('Flutter App'),
+        ),
+        body:  Image.asset('assets/images/ihelp-logo.png')
     );
+    // return Scaffold(
+    //   appBar: AppBar(
+    //     title: const Text('Flutter App'),
+    //   ),
+    //   body: Center(
+    //     child: Container(width: 200, height: 100, color: Colors.brown, child: const Center(child: Text('center div container', style: TextStyle(color: Colors.white, fontSize: 20),)))
+    //   )
+    // );
   }
 }
