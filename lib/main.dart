@@ -55,9 +55,9 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: const Text('Flutter App'),
       ),
-      body: const Center(
-        child: Text('hello flutter', style: TextStyle(fontSize: 25)),
-      ),
+      body: Center(
+        child: Container(width: 200, height: 100, color: Colors.brown, child: const Center(child: Text('center div container', style: TextStyle(color: Colors.white, fontSize: 20),)))
+      )
     );
   }
 }
