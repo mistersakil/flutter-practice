@@ -55,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           title: const Text('Flutter App'),
         ),
-        body:  Image.asset('assets/images/ihelp-logo.png')
+        body: Center(child: Container(color: Colors.grey, width:150, height:100, child: Image.asset('assets/images/ihelp-logo.png')))
     );
     // return Scaffold(
     //   appBar: AppBar(
