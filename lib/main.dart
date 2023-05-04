@@ -35,40 +35,83 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           title: const Text('Flutter AppBar'),
         ),
-        body: Center(
-          child: InkWell(
-            onTap: (){
-              print('container box tapped');
-            },
-            onDoubleTap: (){
-              print('container box double tapped');
-            },
-            onLongPress: (){
-              print('container box long tapped');
-            },
-            child: Container(
-              width: 200,
-              height: 200,
-              color: Colors.amberAccent,
-              child: Center(
-                child: InkWell(
-                  onTap: (){
-                    print('text widget tapped inside a container');
-                  },
-                    onDoubleTap: (){
-                      print('text widget double tapped inside a container');
-                    },
-                    onLongPress: (){
-                      print('text widget long pressed inside a container');
-                    },
-                    child: const Text(
-                  "some text",
-                  style: TextStyle(fontSize: 24),
-                )),
-              ),
+        body: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                Container(
+                  margin: const EdgeInsets.only(bottom: 10.0),
+                  height: 150,
+                  color: Colors.black,
+                ),
+                Container(
+                  margin: const EdgeInsets.only(bottom: 10.0),
+                  height: 150,
+                  color: Colors.black87,
+                ),
+                Container(
+                  margin: const EdgeInsets.only(bottom: 10.0),
+                  height: 150,
+                  color: Colors.black54,
+                ),
+                Container(
+                  margin: const EdgeInsets.only(bottom: 10.0),
+                  height: 150,
+                  color: Colors.black45,
+                ),
+                Container(
+                  margin: const EdgeInsets.only(bottom: 10.0),
+                  height: 150,
+                  color: Colors.black38,
+                ),
+                Container(
+                  margin: const EdgeInsets.only(bottom: 10.0),
+                  height: 150,
+                  color: Colors.black26,
+                ),
+              ],
             ),
           ),
         ));
+    // return Scaffold(
+    //     appBar: AppBar(
+    //       title: const Text('Flutter AppBar'),
+    //     ),
+    //     body: Center(
+    //       child: InkWell(
+    //         onTap: (){
+    //           print('container box tapped');
+    //         },
+    //         onDoubleTap: (){
+    //           print('container box double tapped');
+    //         },
+    //         onLongPress: (){
+    //           print('container box long tapped');
+    //         },
+    //         child: Container(
+    //           width: 200,
+    //           height: 200,
+    //           color: Colors.amberAccent,
+    //           child: Center(
+    //             child: InkWell(
+    //               onTap: (){
+    //                 print('text widget tapped inside a container');
+    //               },
+    //                 onDoubleTap: (){
+    //                   print('text widget double tapped inside a container');
+    //                 },
+    //                 onLongPress: (){
+    //                   print('text widget long pressed inside a container');
+    //                 },
+    //                 child: const Text(
+    //               "some text",
+    //               style: TextStyle(fontSize: 24),
+    //             )),
+    //           ),
+    //         ),
+    //       ),
+    //     ));
     // return Scaffold(
     //     appBar: AppBar(
     //       title: const Text('Flutter AppBar'),
