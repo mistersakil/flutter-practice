@@ -35,22 +35,40 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           title: const Text('Flutter AppBar'),
         ),
-        body: Container(
-          color: Colors.brown,
-          height: 300,
-          // width: 200,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.end,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              const Text('A', style: TextStyle(fontSize: 25)),
-              const Text('B', style: TextStyle(fontSize: 25)),
-              const Text('C', style: TextStyle(fontSize: 25)),
-              const Text('D', style: TextStyle(fontSize: 25)),
-              ElevatedButton(onPressed: () {}, child: const Text("Join"))
-            ],
+        body: Center(
+          child: Container(
+            child: ElevatedButton(
+              child: const Text('Elevated button'),
+              onPressed: (){
+                print('button short pressed');
+              },
+              onLongPress: (){
+                print("btn long pressed");
+              },
+            ),
+
           ),
         ));
+    // return Scaffold(
+    //     appBar: AppBar(
+    //       title: const Text('Flutter AppBar'),
+    //     ),
+    //     body: Container(
+    //       color: Colors.brown,
+    //       height: 300,
+    //       // width: 200,
+    //       child: Column(
+    //         mainAxisAlignment: MainAxisAlignment.end,
+    //         crossAxisAlignment: CrossAxisAlignment.stretch,
+    //         children: [
+    //           const Text('A', style: TextStyle(fontSize: 25)),
+    //           const Text('B', style: TextStyle(fontSize: 25)),
+    //           const Text('C', style: TextStyle(fontSize: 25)),
+    //           const Text('D', style: TextStyle(fontSize: 25)),
+    //           ElevatedButton(onPressed: () {}, child: const Text("Join"))
+    //         ],
+    //       ),
+    //     ));
     // return Scaffold(
     //     appBar: AppBar(
     //       title: const Text('Flutter AppBar'),
