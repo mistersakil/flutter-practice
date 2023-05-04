@@ -36,19 +36,57 @@ class _MyHomePageState extends State<MyHomePage> {
           title: const Text('Flutter AppBar'),
         ),
         body: Center(
-          child: Container(
-            child: ElevatedButton(
-              child: const Text('Elevated button'),
-              onPressed: (){
-                print('button short pressed');
-              },
-              onLongPress: (){
-                print("btn long pressed");
-              },
+          child: InkWell(
+            onTap: (){
+              print('container box tapped');
+            },
+            onDoubleTap: (){
+              print('container box double tapped');
+            },
+            onLongPress: (){
+              print('container box long tapped');
+            },
+            child: Container(
+              width: 200,
+              height: 200,
+              color: Colors.amberAccent,
+              child: Center(
+                child: InkWell(
+                  onTap: (){
+                    print('text widget tapped inside a container');
+                  },
+                    onDoubleTap: (){
+                      print('text widget double tapped inside a container');
+                    },
+                    onLongPress: (){
+                      print('text widget long pressed inside a container');
+                    },
+                    child: const Text(
+                  "some text",
+                  style: TextStyle(fontSize: 24),
+                )),
+              ),
             ),
-
           ),
         ));
+    // return Scaffold(
+    //     appBar: AppBar(
+    //       title: const Text('Flutter AppBar'),
+    //     ),
+    //     body: Center(
+    //       child: Container(
+    //         child: ElevatedButton(
+    //           child: const Text('Elevated button'),
+    //           onPressed: (){
+    //             print('button short pressed');
+    //           },
+    //           onLongPress: (){
+    //             print("btn long pressed");
+    //           },
+    //         ),
+    //
+    //       ),
+    //     ));
     // return Scaffold(
     //     appBar: AppBar(
     //       title: const Text('Flutter AppBar'),
