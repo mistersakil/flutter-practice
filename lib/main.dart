@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main(){
@@ -28,7 +27,7 @@ class HomePage extends StatelessWidget{
         title: Text("Flutter Nabar"),
       ),
       body: Container(
-        color: Colors.brown,
+        color: Colors.blue.shade100,
       ),
     );
   }
