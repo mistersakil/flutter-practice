@@ -45,12 +45,14 @@ class HomePageForExpendedWidget extends StatelessWidget {
             color: Colors.deepOrange,
           )),
           Expanded(
+            flex: 3,
               child: Container(
             width: 100,
             height: 100,
             color: Colors.green,
           )),
           Expanded(
+            flex: 1,
               child: Container(
             height: 100,
             width: 100,
